@@ -1,766 +1,432 @@
-/* ==============================
-   HITO180
-   RESPONSIVE WEBSITE
-   ============================== */
-
-:root {
-    --black: #171717;
-    --black-soft: #222222;
-    --sand: #BEAD8F;
-    --white: #F7F6F2;
-    --grey: #A7A7A7;
-    --green: #76846D;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--black);
-    color: var(--white);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* ==============================
-   HEADER
-   ============================== */
-
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    padding: 24px 6%;
-
-    background: rgba(23, 23, 23, 0.96);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.brand {
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.brand strong {
-    color: var(--sand);
-}
-
-.nav {
-    display: flex;
-    gap: 32px;
-}
-
-.nav a {
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--grey);
-    transition: color 0.3s ease;
-}
-
-.nav a:hover {
-    color: var(--sand);
-}
-
-
-/* ==============================
-   HERO
-   ============================== */
-
-.hero {
-    min-height: calc(100vh - 80px);
-
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
+<!DOCTYPE html>
+<html lang="es">
 
-    gap: 60px;
-    padding: 80px 8%;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.hero-content {
-    max-width: 760px;
-}
-
-.eyebrow {
-    color: var(--sand);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-}
+    <title>HITO180 | Project Management</title>
 
-.hero h1 {
-    font-size: clamp(60px, 8vw, 120px);
-    line-height: 0.88;
-    letter-spacing: -5px;
-    margin-bottom: 40px;
-}
+    <meta name="description"
+          content="HITO180. Dirección, planificación y control de proyectos.">
 
-.hero h1 span,
-.section-content h2 span,
-.contact h2 span {
-    color: var(--sand);
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.hero-text {
-    max-width: 530px;
+<body>
 
-    color: var(--grey);
-    font-size: 21px;
-    line-height: 1.55;
+    <!-- HEADER -->
+    <header class="header">
 
-    margin-bottom: 40px;
-}
+        #inicio
+            <span>HITO</span><strong>180</strong>
+        </a>
 
-.hero-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        <nav class="nav" aria-label="Navegación principal">
+            #nosotrosNosotros</a>
+            #serviciosServicios</a>
+            #enfoqueEnfoque</a>
+            #contactoContacto</a>
+        </nav>
 
-.hero-logo img {
-    width: min(100%, 520px);
-}
+    </header>
 
 
-/* ==============================
-   BUTTONS
-   ============================== */
+    <main>
 
-.button {
-    display: inline-block;
+        <!-- HERO -->
+        <section id="inicio" class="hero">
 
-    padding: 15px 28px;
+            <div class="hero-content">
 
-    border: 1px solid var(--sand);
+                <p class="eyebrow">
+                    PROJECT MANAGEMENT · MADRID
+                </p>
 
-    color: var(--sand);
+                <h1>
+                    PROJECTS.<br>
+                    CONTROL.<br>
+                    <span>RESULTS.</span>
+                </h1>
 
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+                <p class="hero-text">
+                    Dirección y gestión de proyectos orientada a
+                    transformar objetivos en resultados.
+                </p>
 
-    transition: 0.3s ease;
-}
+                #nosotros
+                    Conócenos
+                </a>
 
-.button:hover {
-    background: var(--sand);
-    color: var(--black);
-}
+            </div>
 
-.button-light {
-    border-color: var(--white);
-    color: var(--white);
-}
+            <div class="hero-logo">
 
-.button-light:hover {
-    background: var(--white);
-    color: var(--black);
-}
+                images/Hito180_Negro_Dorado_Arena.png
 
+            </div>
 
-/* ==============================
-   GENERAL SECTIONS
-   ============================== */
+        </section>
 
-.section {
-    display: grid;
-    grid-template-columns: 180px 1fr;
 
-    gap: 50px;
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="section section-light">
 
-    padding: 120px 8%;
-}
+            <div class="section-label">
+                01 / NOSOTROS
+            </div>
 
-.section-label {
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    opacity: 0.6;
-}
+            <div class="section-content">
 
-.section-content {
-    max-width: 1200px;
-}
+                <h2>
+                    Gestionamos la complejidad.<br>
+                    <span>Protegemos el resultado.</span>
+                </h2>
 
-.section-content > h2 {
-    max-width: 950px;
+                <div class="about-grid">
 
-    font-size: clamp(42px, 6vw, 84px);
-    line-height: 1;
+                    <p class="large-text">
+                        HITO180 es un equipo especializado
+                        en dirección y gestión de proyectos.
+                    </p>
 
-    letter-spacing: -3px;
+                    <p>
+                        Trabajamos con una visión integral,
+                        conectando estrategia, planificación,
+                        costes, riesgos, recursos y ejecución
+                        para facilitar una toma de decisiones
+                        clara durante todo el ciclo de vida.
+                    </p>
 
-    margin-bottom: 70px;
-}
+                </div>
 
+            </div>
 
-/* ==============================
-   LIGHT SECTION
-   ============================== */
+        </section>
 
-.section-light {
-    background: var(--white);
-    color: var(--black);
-}
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section section-dark">
 
-    gap: 80px;
+            <div class="section-label">
+                02 / SERVICIOS
+            </div>
 
-    max-width: 950px;
-}
+            <div class="section-content">
 
-.about-grid p {
-    font-size: 18px;
-    color: #595959;
-}
+                <p class="eyebrow">WHAT WE DO</p>
 
-.about-grid .large-text {
-    color: var(--black);
-    font-size: 26px;
-    line-height: 1.4;
-}
+                <h2>
+                    Dirección.<br>
+                    Planificación.<br>
+                    <span>Control.</span>
+                </h2>
 
+                <div class="services-grid">
 
-/* ==============================
-   SERVICES
-   ============================== */
+                    <article class="service">
 
-.section-dark {
-    background: var(--black);
-    color: var(--white);
-}
+                        <span>01</span>
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+                        <h3>Project Management</h3>
 
-    border-top: 1px solid #414141;
-    border-left: 1px solid #414141;
-}
+                        <p>
+                            Dirección, coordinación y seguimiento
+                            integral desde la definición hasta
+                            la entrega.
+                        </p>
 
-.service {
-    min-height: 260px;
+                    </article>
 
-    padding: 32px;
 
-    border-right: 1px solid #414141;
-    border-bottom: 1px solid #414141;
+                    <article class="service">
 
-    transition: background 0.3s ease;
-}
+                        <span>02</span>
 
-.service:hover {
-    background: var(--black-soft);
-}
+                        <h3>Planning &amp; Control</h3>
 
-.service > span {
-    display: block;
+                        <p>
+                            Estructuración de alcance, cronograma,
+                            hitos y mecanismos de seguimiento.
+                        </p>
 
-    color: var(--sand);
-    font-size: 11px;
+                    </article>
 
-    margin-bottom: 55px;
-}
 
-.service h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-}
+                    <article class="service">
 
-.service p {
-    max-width: 280px;
+                        <span>03</span>
 
-    color: var(--grey);
-    font-size: 14px;
-}
+                        <h3>Cost Management</h3>
 
+                        <p>
+                            Planificación presupuestaria,
+                            seguimiento económico y control
+                            de desviaciones.
+                        </p>
 
-/* ==============================
-   METHOD
-   ============================== */
+                    </article>
 
-.section-accent {
-    background: var(--sand);
-    color: var(--black);
-}
 
-.section-accent .eyebrow {
-    color: var(--black);
-}
+                    <article class="service">
 
-.section-accent h2 span {
-    color: var(--white);
-}
+                        <span>04</span>
 
-.method {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+                        <h3>Risk Management</h3>
 
-    border-top: 1px solid rgba(23, 23, 23, 0.4);
-}
+                        <p>
+                            Identificación, evaluación,
+                            respuesta y seguimiento de riesgos.
+                        </p>
 
-.method-step {
-    position: relative;
+                    </article>
 
-    padding: 35px 20px 35px 0;
 
-    border-right: 1px solid rgba(23, 23, 23, 0.25);
-}
+                    <article class="service">
 
-.method-step:not(:first-child) {
-    padding-left: 20px;
-}
+                        <span>05</span>
 
-.method-step > span {
-    display: block;
-    font-size: 11px;
-    margin-bottom: 60px;
-}
+                        <h3>Procurement</h3>
 
-.method-step h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
+                        <p>
+                            Planificación y coordinación
+                            de proveedores y contratistas.
+                        </p>
 
-.method-step p {
-    font-size: 14px;
-    line-height: 1.8;
-}
+                    </article>
 
 
-/* ==============================
-   PRINCIPLES
-   ============================== */
+                    <article class="service">
 
-.principles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+                        <span>06</span>
 
-    gap: 2px;
+                        <h3>Project Delivery</h3>
 
-    max-width: 1000px;
-}
+                        <p>
+                            Seguimiento de entregables,
+                            aceptación, transición y cierre.
+                        </p>
 
-.principles > div {
-    padding: 40px 30px;
+                    </article>
 
-    border-top: 2px solid var(--sand);
+                </div>
 
-    background: #efeee9;
-}
+            </div>
 
-.principles span {
-    color: #777;
-    font-size: 11px;
-}
+        </section>
 
-.principles h3 {
-    margin: 45px 0 15px;
 
-    font-size: 25px;
-}
+        <!-- ENFOQUE -->
+        <section id="enfoque" class="section section-accent">
 
-.principles p {
-    color: #666;
-    font-size: 15px;
-}
+            <div class="section-label">
+                03 / ENFOQUE
+            </div>
 
+            <div class="section-content">
 
-/* ==============================
-   CONTACT
-   ============================== */
+                <p class="eyebrow">
+                    THE HITO180 WAY
+                </p>
 
-.contact {
-    min-height: 75vh;
+                <h2>
+                    De la definición<br>
+                    <span>a la entrega.</span>
+                </h2>
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+                <div class="method">
 
-    padding: 100px 8%;
+                    <div class="method-step">
 
-    background: var(--green);
-}
+                        <span>01</span>
 
-.contact .eyebrow {
-    color: var(--white);
-}
+                        <h3>DEFINE</h3>
 
-.contact h2 {
-    font-size: clamp(55px, 9vw, 120px);
-    line-height: 0.9;
+                        <p>
+                            Objetivos<br>
+                            Alcance<br>
+                            Stakeholders
+                        </p>
 
-    letter-spacing: -5px;
+                    </div>
 
-    margin-bottom: 40px;
-}
 
-.contact h2 span {
-    color: var(--sand);
-}
+                    <div class="method-step">
 
-.contact-location {
-    font-size: 18px;
+                        <span>02</span>
 
-    margin-bottom: 35px;
+                        <h3>PLAN</h3>
 
-    color: rgba(255, 255, 255, 0.75);
-}
+                        <p>
+                            Cronograma<br>
+                            Recursos<br>
+                            Costes
+                        </p>
 
+                    </div>
 
-/* ==============================
-   FOOTER
-   ============================== */
 
-.footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+                    <div class="method-step">
 
-    gap: 30px;
+                        <span>03</span>
 
-    padding: 40px 8%;
+                        <h3>EXECUTE</h3>
 
-    background: #101010;
+                        <p>
+                            Equipos<br>
+                            Proveedores<br>
+                            Entregables
+                        </p>
 
-    color: #888;
+                    </div>
 
-    font-size: 12px;
-}
 
-.footer-brand {
-    color: var(--white);
+                    <div class="method-step">
 
-    font-size: 18px;
-    font-weight: bold;
+                        <span>04</span>
 
-    letter-spacing: 2px;
-}
+                        <h3>CONTROL</h3>
 
-.footer-brand span {
-    color: var(--sand);
-}
+                        <p>
+                            Avance<br>
+                            Riesgos<br>
+                            Cambios
+                        </p>
 
+                    </div>
 
-/* ==============================
-   TABLET
-   ============================== */
 
-@media (max-width: 900px) {
+                    <div class="method-step">
 
-    .hero {
-        grid-template-columns: 1fr;
+                        <span>05</span>
 
-        min-height: auto;
+                        <h3>DELIVER</h3>
 
-        gap: 50px;
+                        <p>
+                            Validación<br>
+                            Transición<br>
+                            Cierre
+                        </p>
 
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+                    </div>
 
-    .hero-logo {
-        justify-content: flex-start;
-    }
+                </div>
 
-    .hero-logo img {
-        width: min(100%, 450px);
-    }
+            </div>
 
-    .section {
-        grid-template-columns: 1fr;
-        gap: 35px;
+        </section>
 
-        padding: 90px 7%;
-    }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+        <!-- PRINCIPIOS -->
+        <section class="section section-light">
 
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+            <div class="section-label">
+                04 / PRINCIPIOS
+            </div>
 
-    .method {
-        grid-template-columns: repeat(2, 1fr);
-    }
+            <div class="section-content">
 
-    .principles {
-        grid-template-columns: 1fr;
-    }
+                <h2>
+                    Menos ruido.<br>
+                    <span>Más control.</span>
+                </h2>
 
-    .footer {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+                <div class="principles">
 
+                    <div>
 
-/* ==============================
-   MOBILE
-   ============================== */
+                        <span>01</span>
 
-@media (max-width: 600px) {
+                        <h3>CLARITY</h3>
 
-    /* Header */
+                        <p>
+                            Decisiones basadas en información
+                            clara, relevante y trazable.
+                        </p>
 
-    .header {
-        position: relative;
+                    </div>
 
-        flex-direction: column;
-        align-items: flex-start;
 
-        gap: 18px;
+                    <div>
 
-        padding: 20px;
-    }
+                        <span>02</span>
 
-    .brand {
-        font-size: 20px;
-    }
+                        <h3>CONTROL</h3>
 
-    .nav {
-        width: 100%;
+                        <p>
+                            Seguimiento de alcance, plazo,
+                            costes, riesgos y cambios.
+                        </p>
 
-        gap: 0;
+                    </div>
 
-        justify-content: space-between;
-    }
 
-    .nav a {
-        font-size: 9px;
-        letter-spacing: 1px;
-    }
+                    <div>
 
+                        <span>03</span>
 
-    /* Hero */
+                        <h3>DELIVERY</h3>
 
-    .hero {
-        display: flex;
-        flex-direction: column;
+                        <p>
+                            Orientación permanente hacia
+                            los resultados y la entrega.
+                        </p>
 
-        padding: 70px 20px;
+                    </div>
 
-        gap: 50px;
-    }
+                </div>
 
-    .hero-content {
-        width: 100%;
-    }
+            </div>
 
-    .eyebrow {
-        font-size: 10px;
-        letter-spacing: 2px;
-    }
+        </section>
 
-    .hero h1 {
-        font-size: clamp(48px, 16vw, 72px);
 
-        line-height: 0.92;
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact">
 
-        letter-spacing: -3px;
+            <p class="eyebrow">
+                HITO180 · PROJECT MANAGEMENT
+            </p>
 
-        margin-bottom: 30px;
-    }
+            <h2>
+                LET'S MOVE<br>
+                THINGS <span>FORWARD.</span>
+            </h2>
 
-    .hero-text {
-        font-size: 17px;
+            <p class="contact-location">
+                Madrid · España
+            </p>
 
-        margin-bottom: 30px;
-    }
+            #inicio
+                Volver al inicio
+            </a>
 
-    .hero-logo {
-        width: 100%;
-    }
+        </section>
 
-    .hero-logo img {
-        width: 100%;
-        max-width: 380px;
-        margin: 0 auto;
-    }
+    </main>
 
 
-    /* Sections */
+    <!-- FOOTER -->
+    <footer class="footer">
 
-    .section {
-        padding: 70px 20px;
-    }
+        <div class="footer-brand">
+            HITO<span>180</span>
+        </div>
 
-    .section-label {
-        margin-bottom: 10px;
+        <div>
+            Project Management
+        </div>
 
-        font-size: 9px;
-    }
+        <div>
+            Madrid · España
+        </div>
 
-    .section-content > h2 {
-        font-size: 42px;
+        <div>
+            © 2026 HITO180
+        </div>
 
-        line-height: 1.05;
+    </footer>
 
-        letter-spacing: -2px;
+</body>
 
-        margin-bottom: 45px;
-    }
-
-    .about-grid .large-text {
-        font-size: 22px;
-    }
-
-    .about-grid p {
-        font-size: 16px;
-    }
-
-
-    /* Services */
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service {
-        min-height: auto;
-
-        padding: 28px 24px;
-    }
-
-    .service > span {
-        margin-bottom: 30px;
-    }
-
-    .service h3 {
-        font-size: 21px;
-    }
-
-    .service p {
-        max-width: none;
-    }
-
-
-    /* Method */
-
-    .method {
-        grid-template-columns: 1fr;
-    }
-
-    .method-step,
-    .method-step:not(:first-child) {
-        padding: 28px 0;
-
-        border-right: none;
-        border-bottom: 1px solid rgba(23, 23, 23, 0.25);
-    }
-
-    .method-step > span {
-        margin-bottom: 20px;
-    }
-
-    .method-step h3 {
-        font-size: 24px;
-    }
-
-
-    /* Principles */
-
-    .principles {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* Contact */
-
-    .contact {
-        min-height: auto;
-
-        padding: 90px 20px;
-    }
-
-    .contact h2 {
-        font-size: clamp(50px, 15vw, 70px);
-
-        line-height: 0.95;
-
-        letter-spacing: -3px;
-    }
-
-
-    /* Footer */
-
-    .footer {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-        padding: 35px 20px;
-    }
-
-
-    /* Buttons */
-
-    .button {
-        width: 100%;
-
-        text-align: center;
-
-        padding: 16px 20px;
-    }
-}
-
-
-/* ==============================
-   VERY SMALL MOBILE
-   ============================== */
-
-@media (max-width: 380px) {
-
-    .nav {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 12px 18px;
-    }
-
-    .hero h1 {
-        font-size: 46px;
-    }
-
-    .section-content > h2 {
-        font-size: 36px;
-    }
-
-    .contact h2 {
-        font-size: 48px;
-    }
-}
+</html>
