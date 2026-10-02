@@ -742,3 +742,75 @@ footer.footer > div {
     text-align: center !important;
 }
 ``
+/* =========================================
+   CENTRADO DEFINITIVO
+   ========================================= */
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-inner {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.contact-inner .eyebrow,
+.contact-inner h2,
+.contact-inner p {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-inner .button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.footer-inner {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.footer-brand,
+.footer-item {
+    width: 100%;
+    text-align: center;
+}
