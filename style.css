@@ -1,0 +1,31 @@
+* {
+box-sizing: border-box;
+}
+ 
+body {
+margin: 0;
+padding: 0;
+background-color: #171717;
+color: #F7F6F2;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+ 
+h1 {
+margin-top: 160px;
+margin-bottom: 20px;
+color: #BEAD8F;
+font-size: 72px;
+letter-spacing: 3px;
+}
+ 
+h2 {
+margin: 0 20px 25px;
+font-size: 28px;
+letter-spacing: 5px;
+}
+ 
+p {
+color: #CCCCCC;
+font-size: 18px;
+}
