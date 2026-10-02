@@ -191,9 +191,7 @@ img {
 
     display: grid;
 
-    grid-template-columns:
-        minmax(0, 1.1fr)
-        minmax(320px, 0.9fr);
+      grid-template-columns: 1fr;
 
     align-items: center;
 
