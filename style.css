@@ -1,19 +1,14 @@
 /* =========================================
    HITO180
-   RESPONSIVE CORPORATE WEBSITE
-   ========================================= */
-
-
-/* =========================================
-   VARIABLES
+   CSS DEFINITIVO RESPONSIVE
    ========================================= */
 
 :root {
     --black: #171717;
-    --black-soft: #222222;
     --black-card: #1d1d1d;
 
     --sand: #BEAD8F;
+
     --white: #F7F6F2;
     --white-soft: #EFEEE9;
 
@@ -23,9 +18,6 @@
     --green: #76846D;
 
     --line-dark: rgba(255, 255, 255, 0.14);
-    --line-light: rgba(23, 23, 23, 0.20);
-
-    --max-width: 1400px;
 }
 
 
@@ -49,7 +41,6 @@ html {
 
 body {
     width: 100%;
-
     margin: 0;
     padding: 0;
 
@@ -59,22 +50,16 @@ body {
     color: var(--white);
 
     font-family: Arial, Helvetica, sans-serif;
-
+    font-size: 16px;
     line-height: 1.6;
+
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 a {
     color: inherit;
-
     text-decoration: none;
-}
-
-img {
-    display: block;
-
-    max-width: 100%;
-
-    height: auto;
 }
 
 
@@ -84,14 +69,12 @@ img {
 
 .header {
     position: sticky;
-
     top: 0;
     z-index: 1000;
 
     width: 100%;
 
     display: flex;
-
     align-items: center;
     justify-content: space-between;
 
@@ -103,18 +86,17 @@ img {
 
     border-bottom: 1px solid var(--line-dark);
 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
 /* =========================================
-   BRAND
+   LOGO / BRAND
    ========================================= */
 
 .brand {
     display: inline-flex;
-
     align-items: baseline;
 
     flex-shrink: 0;
@@ -133,18 +115,16 @@ img {
 
 .brand strong {
     color: var(--sand);
-
     font-weight: 700;
 }
 
 
 /* =========================================
-   NAV
+   NAVEGACION
    ========================================= */
 
 .nav {
     display: flex;
-
     align-items: center;
 
     gap: 30px;
@@ -164,7 +144,7 @@ img {
 
     line-height: 1.2;
 
-    letter-spacing: 1.6px;
+    letter-spacing: 1.4px;
 
     text-transform: uppercase;
 
@@ -208,17 +188,15 @@ img {
     min-height: calc(100vh - 78px);
 
     display: flex;
-
     align-items: center;
 
     padding:
         clamp(80px, 10vw, 140px)
-        max(7%, calc((100vw - var(--max-width)) / 2 + 7%));
+        8%;
 }
 
 .hero-content {
     width: 100%;
-
     max-width: 900px;
 }
 
@@ -237,14 +215,14 @@ img {
 
     line-height: 1.4;
 
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
 
     text-transform: uppercase;
 }
 
 
 /* =========================================
-   HERO TITLE
+   HERO TITULO
    ========================================= */
 
 .hero h1 {
@@ -254,12 +232,14 @@ img {
 
     color: var(--white);
 
-    font-size: clamp(58px, 8vw, 120px);
+    font-size: clamp(58px, 8vw, 118px);
     font-weight: 700;
 
-    line-height: 0.89;
+    line-height: 0.9;
 
-    letter-spacing: clamp(-6px, -0.35vw, -2px);
+    letter-spacing: -4px;
+
+    word-spacing: normal;
 }
 
 .hero h1 span {
@@ -268,26 +248,27 @@ img {
 
 
 /* =========================================
-   HERO TEXT
+   HERO TEXTO
    ========================================= */
 
 .hero-text {
     width: 100%;
-
     max-width: 560px;
 
     margin: 0 0 38px;
 
     color: var(--grey);
 
-    font-size: clamp(17px, 1.6vw, 21px);
+    font-size: clamp(17px, 1.5vw, 21px);
 
     line-height: 1.6;
+
+    letter-spacing: 0;
 }
 
 
 /* =========================================
-   BUTTONS
+   BOTONES
    ========================================= */
 
 .button {
@@ -311,7 +292,7 @@ img {
 
     line-height: 1;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 
     text-align: center;
 
@@ -345,7 +326,7 @@ img {
 
 
 /* =========================================
-   GENERAL SECTIONS
+   SECCIONES
    ========================================= */
 
 .section {
@@ -361,7 +342,7 @@ img {
 
     padding:
         clamp(85px, 10vw, 140px)
-        max(7%, calc((100vw - var(--max-width)) / 2 + 7%));
+        8%;
 }
 
 .section-label {
@@ -372,14 +353,13 @@ img {
 
     line-height: 1.4;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 
     opacity: 0.65;
 }
 
 .section-content {
     width: 100%;
-
     max-width: 1150px;
 
     min-width: 0;
@@ -387,18 +367,18 @@ img {
 
 .section-content > h2 {
     width: 100%;
-
     max-width: 1000px;
 
     margin: 0 0 clamp(50px, 7vw, 80px);
 
-    font-size: clamp(42px, 5.8vw, 82px);
-
+    font-size: clamp(42px, 5.5vw, 80px);
     font-weight: 700;
 
-    line-height: 0.98;
+    line-height: 1;
 
-    letter-spacing: clamp(-4px, -0.25vw, -2px);
+    letter-spacing: -2px;
+
+    word-spacing: normal;
 }
 
 .section-content > h2 span {
@@ -418,7 +398,6 @@ img {
 
 .about-grid {
     width: 100%;
-
     max-width: 950px;
 
     display: grid;
@@ -438,12 +417,15 @@ img {
     font-size: 17px;
 
     line-height: 1.7;
+
+    letter-spacing: 0;
+    word-spacing: normal;
 }
 
 .about-grid .large-text {
     color: var(--black);
 
-    font-size: clamp(22px, 2.4vw, 29px);
+    font-size: clamp(22px, 2.3vw, 29px);
 
     font-weight: 500;
 
@@ -452,7 +434,7 @@ img {
 
 
 /* =========================================
-   SERVICES
+   SERVICIOS
    ========================================= */
 
 .section-dark {
@@ -478,7 +460,6 @@ img {
     min-height: 285px;
 
     display: flex;
-
     flex-direction: column;
 
     padding: 32px;
@@ -504,8 +485,6 @@ img {
 
     font-size: 10px;
     font-weight: 700;
-
-    letter-spacing: 1px;
 }
 
 .service h3 {
@@ -513,14 +492,15 @@ img {
 
     color: var(--white);
 
-    font-size: clamp(19px, 1.7vw, 23px);
+    font-size: 22px;
 
     line-height: 1.25;
+
+    letter-spacing: 0;
 }
 
 .service p {
     width: 100%;
-
     max-width: 310px;
 
     margin: 0;
@@ -530,6 +510,9 @@ img {
     font-size: 14px;
 
     line-height: 1.65;
+
+    letter-spacing: 0;
+    word-spacing: normal;
 }
 
 
@@ -559,7 +542,8 @@ img {
     grid-template-columns:
         repeat(5, minmax(0, 1fr));
 
-    border-top: 1px solid rgba(23, 23, 23, 0.35);
+    border-top:
+        1px solid rgba(23, 23, 23, 0.35);
 }
 
 .method-step {
@@ -576,24 +560,26 @@ img {
 }
 
 .method-step:last-child {
-    border-right: 0;
+    border-right: none;
 }
 
 .method-step > span {
     display: block;
 
-    margin-bottom: clamp(35px, 5vw, 65px);
+    margin-bottom: 50px;
 
     font-size: 10px;
     font-weight: 700;
 }
 
 .method-step h3 {
-    margin: 0 0 18px;
+    margin: 0 0 16px;
 
-    font-size: clamp(18px, 1.6vw, 22px);
+    font-size: 21px;
 
     line-height: 1.2;
+
+    letter-spacing: 0;
 }
 
 .method-step p {
@@ -601,7 +587,9 @@ img {
 
     font-size: 14px;
 
-    line-height: 1.8;
+    line-height: 1.75;
+
+    letter-spacing: 0;
 }
 
 
@@ -611,7 +599,6 @@ img {
 
 .principles {
     width: 100%;
-
     max-width: 1000px;
 
     display: grid;
@@ -627,7 +614,6 @@ img {
     min-height: 260px;
 
     display: flex;
-
     flex-direction: column;
 
     padding: 35px 30px;
@@ -650,6 +636,8 @@ img {
     font-size: 24px;
 
     line-height: 1.2;
+
+    letter-spacing: 0;
 }
 
 .principles p {
@@ -660,6 +648,8 @@ img {
     font-size: 14px;
 
     line-height: 1.65;
+
+    letter-spacing: 0;
 }
 
 
@@ -679,7 +669,7 @@ img {
 
     padding:
         clamp(90px, 11vw, 150px)
-        7%;
+        8%;
 
     background: var(--green);
 
@@ -690,15 +680,12 @@ img {
 
 .contact-inner {
     width: 100%;
-
-    max-width: 1200px;
+    max-width: 1100px;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
 
     margin: 0 auto;
 
@@ -708,27 +695,25 @@ img {
 .contact .eyebrow {
     width: 100%;
 
-    color: rgba(255, 255, 255, 0.90);
+    color: rgba(255, 255, 255, 0.9);
 
     text-align: center;
 }
 
 .contact h2 {
     width: 100%;
-
-    max-width: 1200px;
+    max-width: 1100px;
 
     margin: 0 auto 38px;
 
     color: var(--white);
 
-    font-size: clamp(58px, 8.5vw, 120px);
-
+    font-size: clamp(56px, 8vw, 112px);
     font-weight: 700;
 
-    line-height: 0.9;
+    line-height: 0.92;
 
-    letter-spacing: clamp(-6px, -0.35vw, -3px);
+    letter-spacing: -3px;
 
     text-align: center;
 }
@@ -762,7 +747,7 @@ img {
     align-items: center;
     justify-content: center;
 
-    padding: 50px 20px;
+    padding: 48px 20px;
 
     background: #101010;
 
@@ -772,7 +757,7 @@ img {
 
     line-height: 1.5;
 
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 
     text-align: center;
 }
@@ -781,12 +766,11 @@ img {
     width: 100%;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
 
-    gap: 10px;
+    gap: 9px;
 
     margin: 0 auto;
 
@@ -827,9 +811,8 @@ img {
     }
 
     .nav {
-        gap: 20px;
+        gap: 18px;
     }
-
 
     .hero {
         min-height: auto;
@@ -839,11 +822,16 @@ img {
             7%;
     }
 
+    .hero h1 {
+        font-size: 72px;
+
+        letter-spacing: -2px;
+    }
 
     .section {
         grid-template-columns: 1fr;
 
-        gap: 30px;
+        gap: 28px;
 
         padding:
             90px
@@ -854,12 +842,18 @@ img {
         padding-top: 0;
     }
 
+    .section-content > h2 {
+        font-size: 55px;
+
+        line-height: 1.03;
+
+        letter-spacing: -1.5px;
+    }
 
     .services-grid {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
     }
-
 
     .method {
         grid-template-columns:
@@ -875,16 +869,16 @@ img {
         padding-left: 20px;
     }
 
+    .contact h2 {
+        font-size: 70px;
 
-    .principles {
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
+        letter-spacing: -2px;
     }
 }
 
 
 /* =========================================
-   MOBILE
+   MOVIL
    ========================================= */
 
 @media screen and (max-width: 700px) {
@@ -896,7 +890,6 @@ img {
     html,
     body {
         width: 100%;
-
         max-width: 100%;
 
         overflow-x: hidden;
@@ -908,14 +901,600 @@ img {
     .header {
         position: relative;
 
-        width: 100%;
-
         flex-direction: column;
 
         align-items: center;
 
-        gap: 20px;
+        gap: 18px;
 
-        padding: 22px 18px;
+        padding: 20px;
+    }
+
+    .brand {
+        font-size: 21px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .nav {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+    }
+
+    .nav a {
+        width: 100%;
+
+        min-height: 42px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 9px 5px;
+
+        border:
+            1px solid rgba(255, 255, 255, 0.12);
+
+        font-size: 9px;
+
+        line-height: 1.2;
+
+        letter-spacing: 0.5px;
 
         text-align: center;
+
+        white-space: normal;
+    }
+
+    .nav a::after {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+
+        min-height: auto;
+
+        display: block;
+
+        padding:
+            65px
+            24px
+            75px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+    .hero .eyebrow {
+        margin-bottom: 20px;
+
+        font-size: 9px;
+
+        line-height: 1.4;
+
+        letter-spacing: 1.2px;
+    }
+
+    .hero h1 {
+        width: 100%;
+
+        margin: 0 0 28px;
+
+        font-size: 46px;
+
+        line-height: 1;
+
+        letter-spacing: -1px;
+
+        word-spacing: 0;
+
+        overflow-wrap: normal;
+        word-break: normal;
+
+        font-stretch: normal;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 420px;
+
+        margin-bottom: 30px;
+
+        font-size: 16px;
+
+        line-height: 1.55;
+
+        letter-spacing: 0;
+
+        word-spacing: 0;
+    }
+
+
+    /* BOTONES */
+
+    .button {
+        width: 100%;
+
+        min-height: 50px;
+
+        padding: 14px 18px;
+
+        font-size: 10px;
+
+        letter-spacing: 0.8px;
+    }
+
+
+    /* SECCIONES */
+
+    .section {
+        width: 100%;
+
+        display: block;
+
+        padding:
+            65px
+            24px;
+    }
+
+    .section-label {
+        width: 100%;
+
+        margin: 0 0 24px;
+
+        padding: 0;
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+    .section-content {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+    .section-content > h2 {
+        width: 100%;
+
+        margin: 0 0 40px;
+
+        font-size: 35px;
+
+        line-height: 1.08;
+
+        letter-spacing: -0.5px;
+
+        word-spacing: 0;
+
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+
+    /* NOSOTROS */
+
+    .about-grid {
+        width: 100%;
+
+        display: block;
+    }
+
+    .about-grid .large-text {
+        margin-bottom: 26px;
+
+        font-size: 21px;
+
+        line-height: 1.45;
+
+        letter-spacing: 0;
+    }
+
+    .about-grid p {
+        width: 100%;
+
+        font-size: 16px;
+
+        line-height: 1.65;
+
+        letter-spacing: 0;
+
+        word-spacing: 0;
+    }
+
+
+    /* SERVICIOS */
+
+    .services-grid {
+        width: 100%;
+
+        display: block;
+
+        border-left: none;
+    }
+
+    .service {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 28px 22px;
+
+        border-left:
+            1px solid var(--line-dark);
+    }
+
+    .service > span {
+        margin: 0 0 24px;
+
+        padding: 0;
+    }
+
+    .service h3 {
+        margin-bottom: 11px;
+
+        font-size: 20px;
+
+        line-height: 1.2;
+
+        letter-spacing: 0;
+    }
+
+    .service p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        letter-spacing: 0;
+
+        word-spacing: 0;
+    }
+
+
+    /* ENFOQUE */
+
+    .method {
+        width: 100%;
+
+        display: block;
+    }
+
+    .method-step,
+    .method-step:first-child {
+        width: 100%;
+
+        padding: 27px 0;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(23, 23, 23, 0.25);
+    }
+
+    .method-step:last-child {
+        border-bottom: none;
+    }
+
+    .method-step > span {
+        margin-bottom: 15px;
+    }
+
+    .method-step h3 {
+        margin-bottom: 10px;
+
+        font-size: 21px;
+
+        line-height: 1.2;
+
+        letter-spacing: 0;
+    }
+
+    .method-step p {
+        font-size: 15px;
+
+        line-height: 1.65;
+
+        letter-spacing: 0;
+    }
+
+
+    /* PRINCIPIOS */
+
+    .principles {
+        width: 100%;
+
+        display: block;
+    }
+
+    .principles > div {
+        width: 100%;
+
+        min-height: auto;
+
+        margin-bottom: 3px;
+
+        padding: 28px 22px;
+    }
+
+    .principles h3 {
+        margin: 27px 0 13px;
+
+        font-size: 21px;
+
+        line-height: 1.2;
+
+        letter-spacing: 0;
+    }
+
+    .principles p {
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        letter-spacing: 0;
+    }
+
+
+    /* CONTACTO */
+
+    .contact {
+        width: 100%;
+
+        min-height: auto;
+
+        padding:
+            75px
+            24px;
+
+        text-align: center;
+    }
+
+    .contact-inner {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+    .contact .eyebrow {
+        width: 100%;
+
+        margin-bottom: 20px;
+
+        font-size: 9px;
+
+        line-height: 1.4;
+
+        letter-spacing: 1px;
+
+        text-align: center;
+    }
+
+    .contact h2 {
+        width: 100%;
+        max-width: 450px;
+
+        margin:
+            0 auto
+            28px;
+
+        font-size: 42px;
+
+        line-height: 1;
+
+        letter-spacing: -1px;
+
+        word-spacing: 0;
+
+        text-align: center;
+
+        overflow-wrap: normal;
+        word-break: normal;
+
+        font-stretch: normal;
+    }
+
+    .contact-location {
+        width: 100%;
+
+        margin-bottom: 28px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+
+        letter-spacing: 0;
+
+        text-align: center;
+    }
+
+    .contact .button {
+        width: min(100%, 300px);
+
+        margin: 0 auto;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        width: 100%;
+
+        padding:
+            40px
+            20px;
+
+        text-align: center;
+    }
+
+    .footer-inner {
+        width: 100%;
+
+        gap: 9px;
+
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 18px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .footer-item {
+        width: 100%;
+
+        font-size: 11px;
+
+        letter-spacing: 0;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   TELEFONOS ESTRECHOS
+   ========================================= */
+
+@media screen and (max-width: 430px) {
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+
+        line-height: 1.02;
+
+        letter-spacing: -0.5px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-content > h2 {
+        font-size: 31px;
+
+        line-height: 1.1;
+
+        letter-spacing: -0.3px;
+    }
+
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact h2 {
+        max-width: 360px;
+
+        font-size: 36px;
+
+        line-height: 1.04;
+
+        letter-spacing: -0.5px;
+    }
+}
+
+
+/* =========================================
+   TELEFONOS MUY PEQUEÑOS
+   ========================================= */
+
+@media screen and (max-width: 360px) {
+
+    .header {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .nav {
+        gap: 6px;
+    }
+
+    .nav a {
+        font-size: 8px;
+
+        letter-spacing: 0.2px;
+    }
+
+    .hero {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+
+        letter-spacing: 0;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .section {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .section-content > h2 {
+        font-size: 28px;
+
+        letter-spacing: 0;
+    }
+
+    .contact {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+
+        letter-spacing: 0;
+    }
+}
+
+
+/* =========================================
+   ACCESIBILIDAD
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
